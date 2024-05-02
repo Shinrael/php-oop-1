@@ -11,3 +11,4 @@ Create un file `index.php` in cui:
 2. Creiamo la classe Movie al cui interno inseriamo le due istanze nome e plot.
 3. Creiamo il costrutto per definire le variabili d'istanza all'interno di Movie
 4. Creiamo una funzione per avere il nome del titolo e la trama insieme.
+5. Creiamo un ciclo foreach nel nostro index per ciclare i due Movie che abbiamo creato per stamparli correttamente a schermo

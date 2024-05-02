@@ -6,6 +6,8 @@ $spiderman = new Movie('Spiderman No Way Home', 'Il sequel segue le disavventure
 
 $db = new Movie('Dragon Ball Super Broly', 'La conclusione del Torneo del potere ha lasciato Goku con la consapevolezza di quanti potenti guerrieri esistono tra gli universi, spingendolo ad allenarsi ancora più di prima per diventare più forte. Ben presto, tuttavia, una nuova minaccia compare all/orizzonte: Broly, un saiyan sopravvissuto alla distruzione del pianeta Vegeta ed in possesso di una potenza incredibile. Tra passato e presente, il film approfondirà la storia della razza dei saiyan ed il passato di Goku, Vegeta e Broly, coinvolgendo anche Freezer, Beerus e Whis nello scontro tra i tre grandi saiyan.');
 
+$movies = [$spiderman, $db];
+
 var_dump($spiderman);
 var_dump($db);
 
@@ -25,7 +27,20 @@ var_dump($db);
 <body>
   
   <div class="container text-center">
+
     <h1>MOVIE OOP</h1>
+
+    <div class="container-card d-flex justify-content-center mt-5 ">
+      <?php foreach ($movies as $film): ?>
+        <div class="card mx-3" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title"><?php echo $film->name ?></h5>
+            <p class="card-text"><?php echo $film->plot ?></p>
+          </div>
+        </div>
+        <?php endforeach ?>
+    </div>
+      
   </div>
 
 
